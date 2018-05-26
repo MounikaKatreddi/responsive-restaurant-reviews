@@ -71,28 +71,14 @@ section {
   min-height: 100%;
 }
 
-#footer {
-  background-color: #444;
-  height: 85px;
-}
-
-.copyright {
-  color: #aaa;
-  font-size: 10px;
-  font-size: 0.625rem;
-  letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /* ====================== Navigation ====================== */
 nav {
+  align-items: center;
   background-color: #252831;
   display: flex;
   height: 80px;
   text-align: center;
-  width: 100%;
+  justify-content: center;
 }
 
 nav h1 {
@@ -101,10 +87,10 @@ nav h1 {
 
 nav h1 a {
   color: #fff;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 }
 
@@ -141,6 +127,28 @@ nav h1 a {
 #breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
+}
+
+/* ====================== Footer ====================== */
+
+#footer {
+  align-items: center;
+  background-color: #444;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 10px;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  margin: 0;
+  max-width: 80%;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ====================== Map ====================== */
@@ -354,8 +362,19 @@ nav h1 a {
 /* 480px at 16 base pixel size */
 @media screen and (min-width: 30em) {
   nav h1 a {
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: 7px;
+  }
+}
+
+/* 680px at 16 base pixel size
+    - two columns for restaurant page */
+@media screen and (min-width: 42em) {
+  nav h1 a {
     font-size: 20px;
     font-size: 1.25rem;
+    letter-spacing: 10px;
   }
 
   #breadcrumb {
@@ -363,8 +382,15 @@ nav h1 a {
     width: calc(50% - 80px);
   }
 
+  .copyright {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+
   .inside #map-container {
-    height: calc(100% - 165px);
+    /* full helght less header 80px and footer 80px */
+    height: calc(100% - 160px);
+    top: 80px;
     width: 50%;
   }
 }
