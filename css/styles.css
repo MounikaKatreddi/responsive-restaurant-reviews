@@ -73,6 +73,7 @@ section {
 
 #footer {
   background-color: #444;
+  height: 85px;
 }
 
 .copyright {
@@ -108,13 +109,14 @@ nav h1 a {
 }
 
 #breadcrumb {
-  padding: 10px 40px 16px;
+  padding: 10px 20px;
+  height: 30px;
   list-style: none;
   background-color: #eee;
   font-size: 18px;
   font-size: 1.125rem;
   margin: 0;
-  width: calc(50% - 80px);
+  width: 100%;
 }
 
 /* Display list items side by side */
@@ -248,11 +250,11 @@ nav h1 a {
 
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 50%;
   position: fixed;
   right: 0;
-  top: 80px;
-  width: 50%;
+  top: 130px;
+  width: 100%;
 }
 
 .inside #map {
@@ -354,5 +356,15 @@ nav h1 a {
   nav h1 a {
     font-size: 20px;
     font-size: 1.25rem;
+  }
+
+  #breadcrumb {
+    padding: 10px 40px 16px;
+    width: calc(50% - 80px);
+  }
+
+  .inside #map-container {
+    height: calc(100% - 165px);
+    width: 50%;
   }
 }
