@@ -449,3 +449,25 @@ nav h1 a {
     font-size: 1.75rem;
   }
 }
+
+/* 960px at 16 base pixel size
+    - fix max width of sidebar on restaurant page */
+@media screen and (min-width: 60em) {
+  #breadcrumb {
+    width: 392px;
+  }
+
+  #maincontent {
+    width: 472px;
+  }
+
+  .inside #map-container {
+    width: calc(100% - 472px);
+  }
+}
+
+/* 1200px at 16 base pixel size
+  @media screen and (min-width: 75em) {
+
+}
+*/
