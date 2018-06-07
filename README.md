@@ -55,6 +55,10 @@ static get DATABASE_URL() {
 
 ### Resources and Documentation:
 
+* Skip Links:
+  * [NC State IT Accessibility](https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/)
+  * [WebAIM "Skip Navigation" Links](NaAIMhttps://webaim.org/techniques/skipnav/)
+
 ### Udacity Resources:
 
 * [Project Starter Code](https://github.com/udacity/mws-restaurant-stage-1)
