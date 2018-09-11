@@ -11,23 +11,23 @@
 
 <body>
    <a href="#filter" class="skip">Skip over map</a>
-  <header>
+  <header role="banner">
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="homecontent">
-    <section id="map-container">
+    <section id="map-container" aria-label="map">
       <div id="map"></div>
     </section>
     <section id="filter">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="Filter by neighborhood" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" aria-label="Filter by cuisine"  onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
@@ -40,7 +40,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgmHm_-hXDt1T4BzTmtGDDqikROXFpnmo&libraries=places&callback=initMap"></script>
 
 
-  <footer id="footer">
+  <footer role="contentinfo">
     <p class="copyright">Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.</p>
   </footer>
 
